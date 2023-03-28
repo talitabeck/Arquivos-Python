@@ -12,6 +12,20 @@ import numpy as np
 import matplotlib.pyplot as plt
 # %matplotlib inline
 
+# Faça o gráfico das funções matemáticas descritas a seguir usando a biblioteca matplotlib:
+
+# y = 2 seno(x/2)
+# y = 2 seno(2x)
+# y = 1 + seno(2x)
+# Siga as seguintes instruções:
+
+# Todas funções devem estar no mesmo gráfico;
+# Escreva "Eixo X" no rótulo do eixo X e "Eixo Y" no rótulo do eixo Y;
+# Escreva o título "Funções" no topo do gráfico;
+# Coloque uma grade (grid) no gráfico;
+# Use o intervalo -10 a 10 para o eixo X;
+# A linha representando a função 1 deve estar em azul, a função 2 em ciano, e a função 3 em vermelho.
+
 #exercicio 1
 
 x = np.arange(-10,10,0.01)
