@@ -7,6 +7,19 @@ Original file is located at
     https://colab.research.google.com/drive/1kDX2eF3L3lbOiIQOqx7geUn8itfbWfZx
 """
 
+# Escreva um programa que calcule a média da disciplina. Siga os seguintes passos:
+
+# Peça para o usuário o número total de trabalhos e leia esse valor;
+# Peça a nota de cada um dos trabalhos e leia;
+# Peça a nota da prova e leia o valor;
+# Calcule a média final como a média ponderada da média dos trabalhos (peso 6) e a nota da prova (peso 4);
+# Escreva na tela a nota final numérica e também qual foi o conceito final do aluno, seguindo a conversão abaixo:
+# Nota < 5, conceito F;
+# 5,0 ≤ Nota < 6,0, conceito D;
+# 6,0 ≤ Nota < 7,0, conceito C;
+# 7,0 ≤ Nota < 8,5, conceito B;
+# 8,5 ≤ Nota ≤ 10, conceito A.
+
 #exercicio 3
 
 listatrabalhos = []
