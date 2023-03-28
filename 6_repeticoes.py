@@ -7,6 +7,37 @@ Original file is located at
     https://colab.research.google.com/drive/1zn1bzC90rzzmALTL3scWn14eyyVP_2-A
 """
 
+# Este trabalho irá exercitar estruturas de repetição.
+
+# Entrada do programa: uma quantidade variável de linhas com valores inteiros. A primeira linha contém um valor N que representa a quantidade de itens em uma lista.
+#     Depois, há N linhas com os valores a serem armazenados em uma lista.
+
+# Saída: duas linhas devem ser escritas na tela. A primeira deve ter os N valores da lista, listados na ordem inversa que foram lidos. No entanto, valores negativos
+#     devem ser ignorados. Deve haver um caracter espaço (" ") depois de cada item da lista. A segunda linha da saída deve ser a soma dos valores da primeira linha.
+
+# Exemplo de entrada 1:
+# 3
+# 1
+# 2
+# 3
+# Exemplo de saída 1:
+# 3 2 1 
+# 6
+# Exemplo de entrada 2:
+# 9
+# 2
+# -1
+# 3
+# -2
+# 4
+# -4
+# 5
+# 0
+# 6
+# Exemplo de saída 2:
+# 6 0 5 4 3 2 
+# 20
+
 linhas = int(input())
 somavalores = 0
 lista = []
