@@ -2,3 +2,11 @@
 Contendo todos os projetos desenvolvidos na linguagem Python para a disciplina de bases computacionais da ciência na Universidade Federal do ABC, ministrada pelo professor Rodrigo A. C. da Silva, quadrimestre de ingressantes de 2022.
 
 Alguns dos arquivos exigirão a leitura de uma tabela em CSV para uso da biblioteca pandas, que estarão anexados com os respectivos títulos nesse mesmo repositório
+ 
+link dos arquivos csv para o teste dos programas de análise de dados metereológicos e o 7-correlações, com cada cidade anexada:
+(obs: para que funcione, deve-se salvar cada cidade pelo seu nome literal em caixa baixa, sem acentos ou espaços)
+https://labeee.ufsc.br/downloads/arquivos-climaticos/formato-try-swera-csv-bin
+
+link do arquivo utilizado para o teste do programa de análise de dados de taxas universitárias:
+https://moodle.ufabc.edu.br/mod/resource/view.php?id=212177
+
