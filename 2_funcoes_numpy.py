@@ -7,6 +7,16 @@ Original file is located at
     https://colab.research.google.com/drive/1IbIYS37_O3i5cP0pZdNouLdnspJUu-fa
 """
 
+# Faça um programa que leia uma string da entrada e escreva na saída uma das opções abaixo:
+# Se a string representa um número inteiro, escreva o fatorial desse número na saída;
+# Se a string for "ufabc", escreva "minha universidade" na saída;
+# Se a string não representa um número inteiro nem é "ufabc", escreva a própria string na saída.
+# Exemplos:
+
+# Para entrada "4", a saída deve ser "24"
+# Para entrada "ufabc", a saída deve ser "minha universidade"
+# Para entrada "BCC", a saída deve ser "BCC"
+
 f = input()
 a = float(input())
 b = float(input())
