@@ -7,6 +7,33 @@ Original file is located at
     https://colab.research.google.com/drive/1icUNCiu5C-RVbv1XRye1ov6uvJ_D-trG
 """
 
+# Implemente um jogo simples simulando um dado de 6 faces.
+
+# Regras do jogo:
+
+# Há dois jogadores (Jogador 1 e Jogador 2);
+# Cada jogador inicia com 0 (zero) pontos;
+# O jogador que chegar a 3 pontos primeiro ganha;
+# O jogo se desenvolve em rodadas. Em cada rodada deve ocorrer o seguinte:
+# O jogador 1 escolhe um número inteiro entre 1 e 6, chamaremos este número de A;
+# O jogador 2 escolhe um número inteiro entre 1 e 6, chamaremos este número de B;
+# Joga-se o dado, chamaremos o resultado de D;
+# Se A ≠ B, o jogador 1 ganha um ponto se A=D, e o jogador 2 ganha um ponto se B=D. Em outras palavras, se os dois jogadores não "apostaram" no mesmo número, 
+# ganha um ponto quem adivinhou o resultado do dado. Se os dois jogadores escolheram o mesmo número, nenhum deles ganha ponto;
+# Se nenhum jogador ganhou ponto na etapa anterior, analisa-se o valor D novamente. Se D=1, D=2, ou D=3, o jogador 1 ganha um ponto. Se D=4, D=5, ou D=6, o 
+# jogador 2 ganha um ponto.
+# Implemente este jogo seguindo as instruções abaixo:
+
+# O jogador 1 deve ser controlado pelo usuário, enquanto o jogador 2 deverá ser controlado pelo computador;
+# A cada rodada, deve-se  pedir o valor A do usuário, e o valor B deve ser sorteado usando a biblioteca random;
+# O dado deve ser simulado com a biblioteca random;
+# No fim de cada rodada, deve-se escrever o seguinte na tela:
+# Valor escolhido pelo jogador 1 (A);
+# Valor escolhido pelo jogador 2 (B);
+# Valor sorteado no dado (D);
+# Placar de pontos atual;
+# No fim do jogo, deve-se escrever "Parabéns, Jogador 1!" caso o Jogador 1 tenha ganhado, ou "Parabéns, Jogador 2!" caso o Jogador 2 tenha ganhado.
+
 #exercicio 4
 
 import random as rd
