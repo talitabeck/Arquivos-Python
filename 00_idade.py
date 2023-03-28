@@ -7,6 +7,21 @@ Original file is located at
     https://colab.research.google.com/drive/1HtPBY6-D8Iwjx-dj00J-xDuO_5BPl1jR
 """
 
+# Faça um programa que leia um número inteiro da entrada. Esse número representa o ano de nascimento de uma pessoa. 
+# Assumindo que estamos em 2022 e o aniversário da pessoa já passou, escreva uma frase como a seguinte na saída (não vamos usar acentos):
+
+# Voce tem X anos e, portanto, e Y.
+
+# X é a idade da pessoa, Y é uma palavra de acordo com os critérios abaixo:
+# Y = "crianca" se X for menor ou igual a 12;
+# Y = "adolescente" se X for maior ou igual a 13 e menor ou igual a 17;
+# Y = "adulto" se X for maior ou igual a 18 e menor ou igual a 64;
+# Y = "experiente" se X for maior ou igual a 65.
+# Exemplos:
+# Se o valor lido for 2015, deve-se escrever "Voce tem 7 anos e, portanto, e criança."
+# Se o valor lido for 1980, deve-se escrever "Voce tem 42 anos e, portanto, e adulto."
+# Se o valor lido for 1900, deve-se escrever "Voce tem 122 anos e, portanto, e experiente."
+
 x = input()
 y = 2022 - int(x)
 
