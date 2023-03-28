@@ -8,6 +8,25 @@ Original file is located at
 """
 
 # Commented out IPython magic to ensure Python compatibility.
+
+# Neste exercício, você irá ler um arquivo CSV com dados históricos do preço de ações, e deverá gerar um gráfico baseado no arquivo. Um arquivo de entrada de
+# exemplo está disponível para download.
+
+# Escreva um código que faça as seguintes operações:
+
+# Peça para o usuário fazer o upload de um arquivo CSV;
+# Peça o nome do arquivo CSV submetido para o usuário;
+# Faça um gráfico com o campo "Último" do CSV no eixo Y. O eixo X deve ser o índice daquele valor. Os valores devem ser apresentados em ordem cronológica. Esta
+# linha do gráfico deve estar em azul;
+# No mesmo gráfico, coloque uma reta, em vermelho, representando a regressão linear dos dados acima;
+# O título do gráfico deve ser "Valor da ação", o rótulo do eixo X deve ser "Data" e o rótulo do eixo Y deve ser "Valor".
+# Observações:
+
+# Note que os dados no arquivo estão em ordem decrescente de data. Você pode inver a ordem de dados lidos no CSV numa variável df usando df[::-1] ao invés 
+# de df;
+# Para gerar os valores de X, você pode usar a função range passando tamanho dos seus dados;
+# O separador decimal dos números no arquivo CSV é a vírgula. Atenção para esse fato no momento de leitura do arquivo.
+
 #exercicio 2
 
 from google.colab import files
