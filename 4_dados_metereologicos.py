@@ -7,6 +7,68 @@ Original file is located at
     https://colab.research.google.com/drive/1QNKOgfN8v4CFQKlaI-AKeDGWmaMJoSkg
 """
 
+# O objetivo deste trabalho é usar a biblioteca pandas do Python para analisar arquivos CSV com dados de diferentes cidades brasileiras disponibilizados pelo 
+# Laboratório de Eficiência Energética em Edificações. Cada arquivo CSV representa uma cidade, e cada linha tem dados de medições de diversas métricas organizados por 
+# mês, dia, e hora de coleta. Neste trabalho, você criará um programa que lê um arquivo CSV, e, partir da leitura, irá informar diversos dados na tela.
+
+# Entrada do programa: o único valor a ser lido é o nome do CSV a ser processado.
+
+# Saída: os seguintes dados deverão ser impressos na saída, nesta ordem:
+
+# Uma frase do tipo "Media da velocidade do vento: X.XX m/s", em que X.XX é média de todas as medidas de velocidade do vento do arquivo. Esse valor deve ser 
+# apresentado aproximado para duas casas decimais;
+# Uma frase do tipo "Maxima densidade do ar: X.XX kg/m3", em que X.XX é o maior valor entre todas medidas de densidade do ar do arquivo. Esse valor deve ser apresentado 
+# aproximado para duas casas decimais;
+
+# Uma frase do tipo "Entalpia minima: X.XX btu/lb", em que X.XX é o menor valor entre todas medidas de entalpia do arquivo. Esse valor deve ser apresentado aproximado 
+# para duas casas decimais;
+# Uma frase do tipo "Media da direcao do vento no dia 5 do mes 1: X.XX graus", em que X.XX é média das medidas de direção do vento do arquivo coletadas no dia 5 do 
+# mês 1. Esse valor deve ser apresentado aproximado para duas casas decimais;
+# Uma frase do tipo "Quantidade de registros de ponto de orvalho entre 17 e 18 graus Celsius: XXX", em que XXX a quantidade inteira de linhas do arquivo em que o ponto 
+# de orvalho está no intervalo de 17 e 18 graus Celsius (incluindo os valores 17 e 18);
+# Faça um groupby para obter todas as medianas de velocidade do vento agrupadas por mês. Passe o resultado da função groupby para a função print;
+# A frase "Rad Direta Normal maior ou igual a 200 e horizontal menor ou igual a 100 e maior que zero"
+# Faça uma busca para encontrar todas linhas cujo campo "Rad Direta Normal" seja maior ou igual a 200 e cujo campo "Rad Difusa Horizontal" seja menor ou igual a 100 e 
+# maior que zero. Usando a busca, escreva uma frase do tipo "Quantidade: XXX", em que XXX é um inteiro com a quantidade de registros nessa busca. Depois imprima a frase 
+# "10 primeiros:". Por fim, faça um filtro dessa busca para obter somente os campos mês, dia, hora, e rad direta. Então use a função print para imprimir os dez primeiros
+# registros do filtro.
+# Exemplo de entrada:
+# saopaulo.csv
+# Exemplo de saída:
+# Media da velocidade do vento: 3.98 m/s
+# Maxima densidade do ar: 1.15 kg/m3
+# Entalpia minima: 23.90 btu/lb
+# Media da direcao do vento no dia 5 do mes 1: 209.17 graus
+# Quantidade de registros de ponto de orvalho entre 17 e 18 graus Celsius: 968
+# Mes
+# 1     3
+# 2     3
+# 3     3
+# 4     4
+# 5     4
+# 6     3
+# 7     3
+# 8     3
+# 9     4
+# 10    5
+# 11    4
+# 12    4
+# Name: Velocidade do Vento {m/s}, dtype: int64
+# Rad Direta Normal maior ou igual a 200 e horizontal menor ou igual a 100 e maior que zero
+# Quantidade: 521
+# 10 primeiros:
+#      Mes  Dia  Hora  Rad Direta {Wh/m2}
+# 30     1    2     7                 149
+# 246    1   11     7                 112
+# 342    1   15     7                 106
+# 390    1   17     7                 103
+# 449    1   19    18                 245
+# 534    1   23     7                  94
+# 535    1   23     8                 274
+# 582    1   25     7                 130
+# 583    1   25     8                 322
+# 606    1   26     7                  90
+
 import pandas as pd
 
 entrada = input()
