@@ -7,6 +7,47 @@ Original file is located at
     https://colab.research.google.com/drive/1nUhqxHgN6Qp802AZ_RH6w98gpOfLvefq
 """
 
+# O objetivo deste trabalho é usar a biblioteca pandas e a biblioteca numpy do Python para analisar o mesmo arquivo CSV trabalhado na Unidade 5 com dados de taxas 
+# universitárias (tuition). Neste trabalho, você criará um programa que lê um arquivo CSV e escreve na tela o dado pedido na entrada.
+
+# O arquivo a ser lido se chama "tuition.csv" e poderá ser lido diretamente pelo comando read_csv da biblioteca pandas.
+
+# Entrada do programa: uma linha com o comando a ser executado.
+
+# Saída: o dado pedido de acordo com a entrada do programa.
+
+# A linha de entrada é uma string que poderá seguir um dos seguintes padrões:
+
+# "P XX COLUNA", em que XX é um valor inteiro e COLUNA é o nome do campo a ser considerado. Neste caso, seu programa deve escrever na tela o XXᵒ percentil dos valores
+# cuja coluna tenha o nome COLUNA, arredondado para duas casas decimais;
+# "M COLUNA", em que COLUNA é o nome da coluna a ser considerada. Neste caso, seu programa deve escrever na tela a média e o desvio padrão valores cuja coluna tenha o
+# nome COLUNA. A média e o desvio padrão devem estar arredondados para duas casas decimais e separados por um espaço;
+# "A COLUNA", em que COLUNA é o nome da coluna a ser considerada. Neste caso, seu programa deve escrever na tela a amplitude dos valores cuja coluna tenha o nome COLUNA,
+# arredondada para duas casas decimais;
+# "Q XX YY COLUNA", em que XX e YY são valores inteiros e COLUNA é o nome do campo a ser considerado. Neste caso, seu programa deve escrever na tela a quantidade de
+# linhas para as quais o campo de nome COLUNA é maior ou igual a XX e menor ou igual a YY;
+# Caso a primeira letra da entrada não seja "P", "M", "A", ou "Q", seu programa deve escrever "Deu ruim" na tela.
+# Exemplo de entrada 1:
+# P 25 in_state_tuition
+# Exemplo de saída 1:
+# 4890.00
+# Exemplo de entrada 2:
+# M in_state_tuition
+# Exemplo de saída 2:
+# 16491.29 14773.84
+# Exemplo de entrada 3:
+# A in_state_tuition
+# Exemplo de saída 3:
+# 59505.00
+# Exemplo de entrada 4:
+# Q 5000 10000 in_state_tuition
+# Exemplo de saída 4:
+# 709
+# Exemplo de entrada 5:
+# BCC
+# Exemplo de saída 4:
+# Deu ruim
+
 import numpy as np
 import pandas as pd
 
